@@ -63,16 +63,16 @@ function displayData(){
 //           .catch((err)=>{console.log('Error: '+err)})
 //           .finally(()=>{console.log('Inside Finally')})
 async function f1(){
-  try{
+    try{
  await register();
  await sendEmail();
  await login();
  await getData();
  await displayData();
-  }
-  catch(error){
-    console.log("error");
-  }
+    }
+    catch(err){
+     console.log('Error :'+err)
+    }
 }
 f1();
 console.log('call other application')
