@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        body {
+            background: white;
+            margin: 50px;
+            padding: 20px;
+        }
+        #counter {
+            font-size: 2em;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        button {
+            font-size: 1.2em;
+            padding: 8px 20px;
+            cursor: pointer;
+        }
+        img {
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./abes logo.jpeg" alt="logo" style="width: 100px; height: 100px;">
+    </div>
+    <h1>Counter App</h1>
+    <div id="counter">0</div>
+    <div class="buttons">
+        <button onclick="decrement()">-</button>
+        <button onclick="increment()">+</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+    <script>
+        let count = 0;
+        const counterDisplay = document.getElementById('counter');
+
+        function updateDisplay() {
+            counterDisplay.textContent = count;
+        }
+
+        function increment() {
+            count++;
+            updateDisplay();
+        }
+
+        function decrement() {
+            if (count > 0) count--;
+            updateDisplay();
+        }
+
+        function reset() {
+            count = 0;
+            updateDisplay();
+        }
+    </script>
+</body>
+</html>

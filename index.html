@@ -9,7 +9,8 @@
     height: 200px;
     width: 200px ;
     background-color: aliceblue;
-    border: 5px solid red;
+    border: 5px solid rgb(92, 170, 209);
+    border-radius: 20px;
 }
     </style>
 </head>
@@ -23,5 +24,24 @@
            document.getElementById("aaa").innerHTML="Hello";
         }
     </script>
+
+
+
+
+<button onclick="red()">red</button>
+<button onclick="green()">green</button>
+<button onclick="blue()">blue</button>
+<script>
+    function red(){
+        document.getElementById("adi").style.backgroundColor="red";
+    }
+    function green(){
+        document.getElementById("adi").style.backgroundColor="green";
+    }
+    function blue(){
+        document.getElementById("adi").style.backgroundColor="blue";
+    }
+    
+</script>
 </body>
 </html>
