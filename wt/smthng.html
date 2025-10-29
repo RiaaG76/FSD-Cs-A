@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            background-color: rgb(243, 220, 130); 
+            color: rgb(101, 21, 21);
+        }
+        div1 p{
+            background-color: rgb(200, 234, 158); 
+            color: rgb(101, 21, 21);
+        }
+        div + p{    
+            background-color: rgb(157, 190, 225);
+        }
+        div + p +p{    
+            background-color: rgb(182, 236, 218);
+        }
+         div1 + p{    
+            background-color: rgb(215, 181, 240);
+        }
+        div1 + p +p{    
+            background-color: rgb(241, 160, 201);
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinator Selector</h1>
+    <h2>1. Descendant Selector</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptatibus.</p>
+    <div>
+        <p>Para1 in div</p>
+        <p>Para2 in div</p>
+        <p>Para3 in div</p>
+    </div>
+    <p>para4 not in div</p>
+    <p>para5 not in div</p>
+    <div1>
+        <p>Para6 in div</p>
+        <p>Para7 in div</p>
+        <p>Para8 in div</p>
+    </div1>
+    <p>para9 not in div</p>
+    <p>para10 not in div</p>
+    <p>No para in div</p>
+</body>
+</html>

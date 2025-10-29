@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px;
+    }
+    .card {
+      width: 50%;
+      height: 450px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      background: #f9f9f9;
+    }
+    .resume-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    h1, h3 {
+      margin: 5px 0;
+    }
+    ol {
+      text-align: left;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="resume-header">
+      <img id="profilePic" class="profile-img" src="./sceneee.jpg" alt="Profile Picture">
+      <div>
+        <h1 id="displayName">Name</h1>
+        <h3 id="displayClass">Class</h3>
+      </div>
+    </div>
+    <br><br>
+    <h3>Programming Skills:</h3>
+    <ol id="displaySkills"></ol>
+    <h3>Address:</h3>
+    <h4 id="displayAddress">_</h4>
+  </div>
+
+
+  <div class="card">
+    <h3>Fill Your Details</h3>
+    <label>Your Name:</label><br>
+    <input type="text" id="name" oninput="updateResume()" placeholder="Enter your name"><br><br>
+
+    <label>Class:</label><br>
+    <input type="text" id="class" oninput="updateResume()" placeholder="Enter your class"><br><br>
+
+    <label>Programming Skills:</label><br>
+    <input type="text" id="skills" oninput="updateResume()" placeholder="Enter your skills" ><br><br>
+    <label>Address:</label><br>
+    <input type="text" id="address" oninput="updateResume()" placeholder="Enter your address"><br><br>
+  </div>
+
+  <script>
+    function updateResume() {
+      document.getElementById("displayName").textContent =
+        document.getElementById("name").value || "Your Name";
+
+      document.getElementById("displayClass").textContent =
+        document.getElementById("class").value || "Your Class";
+
+      const skillsInput = document.getElementById("skills").value;
+      const skillList = document.getElementById("displaySkills");
+      skillList.innerHTML = "";
+
+      
+        skillList.innerHTML = "<li>" + skillsInput.split(",").join("</li><li>") + "</li>";
+        document.getElementById("displayAddress").textContent = 
+        document.getElementById("address").value || "Address";
+      }
+    
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(197, 118, 118);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+             /* flex-flow: row wrap;....for both */ 
+    justify-content: center;
+}
+.box{
+    width: 50px;
+    height: 80px;
+    padding: 20px;
+    background-color: rgb(122, 28, 56);
+    border-radius: 10px;
+    margin: auto;
+}

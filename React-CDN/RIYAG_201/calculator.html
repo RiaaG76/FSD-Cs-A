@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+</head>
+<body>
+    <script>
+        function pick(val){
+            document.getElementById("a").value +=val;
+        }
+        function solve(){
+              var x=document.getElementById("a").value;
+              var y=eval(x);
+              document.getElementById("a").value=y;
+        }
+        function clr(){
+            document.getElementById("a").value="";
+
+    </script>
+    <table >
+        
+        <tr>
+            
+            <th colspan="3"><input type="text" id="a"></th>
+            <th><input type="button" value="C" onclick="clr()" id="b"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="1" onclick="pick(1)" id="c"></th>
+            <th><input type="button" value="2" onclick="pick(2)" id="d"></th>
+            <th><input type="button" value="3" onclick="pick(3)" id="e"></th>
+            <th><input type="button" value="/" onclick="pick('/')" id="f"></th>
+            
+        </tr>
+        <tr>
+            <th><input type="button" value="4" onclick="pick(4)" id="g"></th>
+            <th><input type="button" value="5" onclick="pick(5)" id="h"></th>
+            <th><input type="button" value="6" onclick="pick(6)" id="i"></th>
+            <th><input type="button" value="*" onclick="pick('*')" id="j"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="7" onclick="pick(7)" id="k"></th>
+            <th><input type="button" value="8" onclick="pick(8)" id="l"></th>
+            <th><input type="button" value="9" onclick="pick(9)" id="m"></th>
+            <th><input type="button" value="-" onclick="pick('-')" id="n"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="." onclick="pick('.')" id="o"></th>
+            <th><input type="button" value="0" onclick="pick(0)" id="p"></th>
+            <th><input type="button" value="=" onclick="solve()" id="q"></th>
+            <th><input type="button" value="+" onclick="pick('+')" id="r"></th>
+        </tr>
+    </table>
+    
+</body>
+</html>

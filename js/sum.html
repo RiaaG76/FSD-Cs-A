@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sum of two numbers:</title>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #dae7e4;
+      display: flex;
+    }
+
+  .problem{
+      margin: auto;
+      padding: 20px;
+      border: 2px solid rgb(237, 235, 235);
+      background-color: #fff
+  }
+   
+</style>
+</head>
+<body>
+  <script>
+    function sum() {
+    let a = parseFloat(document.getElementById("num1").value);
+      let b = parseFloat(document.getElementById("num2").value);
+    document.getElementById("result").innerHTML = "The sum is: " + (a + b);
+    }
+  </script>
+  <div class="problem">
+  <h1>Sum of two numbers</h1>
+  <label for=""></label>
+  <input type="text" id="num1" placeholder="Enter First number">
+  <input type="text" id="num2" placeholder="Enter Second number">
+  <button onclick="sum()" id="result">SUM</button>
+  <p id="result"></p>
+  </div>
+</body>
+</html>

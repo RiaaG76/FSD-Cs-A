@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "students.dtd">
+<?xml-stylesheet type="text/css" href="style.css"?>
+<students>
+  <student>
+    <name>Alex</name>
+    <rollno>101</rollno>
+  </student>
+
+  <student>
+    <name>Arnav</name>
+    <rollno>102</rollno>
+  </student>
+</students>

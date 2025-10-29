@@ -1,0 +1,35 @@
+nav{
+    background-color: rgb(74, 29, 221);
+    padding: 5%;
+    border-radius: 20px;
+}
+nav, h1{
+    color: white;
+font-size: 24px;
+margin: 0;
+padding: 10px 0;
+text-align: center;
+}
+nav div a{
+    text-decoration: none;
+color: inherit;
+display: inline-block;
+padding: 10px 20px;
+transition: background-color 0.3s ease;
+}
+ul li:nth-child(1){
+    background-color: rgb(234, 234, 81);
+}
+
+nav div a:hover{
+  color: rgb(233, 233, 114);
+}
+h1::before{
+    content: url();
+}
+p::first-line{
+    color: rgb(11, 11, 160);
+}
+p::last-line{
+    color: black;
+}

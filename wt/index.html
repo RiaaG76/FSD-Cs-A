@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="bagbtn"
+        onclick="cartquantity=cartquantity+1; document.querySelector('#cart_data').innerHTML='Your cart has'*car" +
+        cartquantity + ' items.' ;">Add to bag</button>
+    <button class="wishlistbtn"
+        onclick="wishlistquantity=wishlistquantity-1; document.querySelector('#wishlist_data').innerHTML='Your wishlist has ' + wishlistquantity + ' items.';">
+        Wishlist
+    </button>
+</body>
+
+</html>

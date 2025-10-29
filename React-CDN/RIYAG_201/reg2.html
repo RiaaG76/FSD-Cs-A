@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration FORM</title>
+    <style>
+        input[type="password"] {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid rgb(224, 121, 121);
+            border-radius: 7px;
+            background-color: rgb(229, 232, 231);
+            background-position: 1px 1px;
+            background-repeat: no-repeat;
+            resize: none;
+        }
+        input[type="text"]{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid rgb(28, 122, 56);
+            border-radius: 7px
+
+        }
+        input[type="email"]{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid rgb(28, 56, 122);
+            border-radius: 7px;
+        }
+        input[type="tel"]{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid rgb(122, 28, 56);
+            border-radius: 7px;
+        
+        }
+       
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <form action="final.html">
+            <h1>LOGIN</h1>
+
+            <label>USERNAME:</label>
+            <input type="text" name="user" placeholder="User-name"><br><br>
+
+            <label>Password:</label>
+            <input type="password" required name="password" placeholder="Password"><br><br>
+
+            <label>Confirm Password:</label>
+            <input type="password" required name="confirm_password" placeholder="Confirm Password"><br><br>
+
+            <label>E-mail:</label>
+            <input type="email" name="email" placeholder="Email"><br><br>
+
+            <label>PHONE:</label>
+            <input type="tel" name="phone" placeholder="Phone"><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female<br><br>
+
+            <label>Choose:</label>
+            <input type="radio" name="option" value="yes"> Yes
+            <input type="radio" name="option" value="no"> No<br><br>
+
+            <label>Checkbox:</label>
+            <input type="checkbox" name="agree"> I agree<br><br>
+
+            <label>DOB:</label>
+            <input type="date" name="dob"><br><br>
+
+            <label>Select:</label>
+            <select name="skills">
+                <option>html</option>
+                <option>java</option>
+                <option>css</option>
+            </select><br><br>
+
+            <label>Address:</label>
+            <textarea rows="5" cols="30" placeholder="Enter address"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+</body>
+
+</html>
