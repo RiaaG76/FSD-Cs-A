@@ -1,0 +1,17 @@
+.card {
+  color: red;
+  text-align: center;
+  background-color: rgb(194, 236, 236);
+  border: 5px solid rgb(50, 50, 79);
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  padding: 25px;
+}
+
+.booklist {
+  flex-wrap: wrap;
+  display: flex;
+}
+
